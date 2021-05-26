@@ -1,9 +1,37 @@
-*, *::before, *::after {
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: #e2d1c3;
+  background-color: #e2d1c3;
+}
+
+header {
+  height: 10vh;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to top, #e2d1c3, #fdfcfb);
+}
+
+header img {
+  width: 12rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
